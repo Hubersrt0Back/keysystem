@@ -14,6 +14,7 @@ local TextLabel_2 = Instance.new("TextLabel")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.Name = "guh"
+ScreenGui.Enabled = true
 
 ver.Name = "ver"
 ver.Parent = ScreenGui
@@ -23,10 +24,6 @@ ver.BorderSizePixel = 0
 ver.Position = UDim2.new(0.660760045, 0, 0.743801713, 0)
 ver.Size = UDim2.new(0, 317, 0, 148)
 wait(4)
-ver:TweenPosition(UDim2.new(0.661, 0,-0.002, 0),"Out",Enum.EasingStyle.Linear,0.5,true)
-wait(0.5)
-ver:TweenPosition(UDim2.new(0, 0,-0.002, 0),"Out",Enum.EasingStyle.Linear,0.5,true)
-wait(0.5)
 ScreenGui:Destroy()
 
 ImageLabel.Parent = ver
