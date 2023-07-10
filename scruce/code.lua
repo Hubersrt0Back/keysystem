@@ -81,10 +81,8 @@ TextButton.MouseButton1Click:Connect(function()
 		-- Version: 3.2
 
 		-- Instances:
-		local guiko = Instance.new('ScreenGui')
-		guiko.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-		guiko.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+		local VERSS = Instance.new("ScreenGui")
 		local FVERSION = Instance.new("Frame")
 		local UICorner = Instance.new("UICorner")
 		local ImageLabel = Instance.new("ImageLabel")
@@ -93,12 +91,16 @@ TextButton.MouseButton1Click:Connect(function()
 
 		--Properties:
 
+		VERSS.Name = "VERSS"
+		VERSS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		VERSS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 		FVERSION.Name = "FVERSION"
-		FVERSION.Parent = guiko
+		FVERSION.Parent = VERSS
 		FVERSION.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
 		FVERSION.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		FVERSION.BorderSizePixel = 0
-		FVERSION.Position = UDim2.new(0.669299781, 0, 0.700757563, 0)
+		FVERSION.Position = UDim2.new(0.951480269, -250, 1.08092284, -220)
 		FVERSION.Size = UDim2.new(0, 309, 0, 173)
 
 		UICorner.Parent = FVERSION
@@ -108,6 +110,7 @@ TextButton.MouseButton1Click:Connect(function()
 		ImageLabel.BackgroundTransparency = 1.000
 		ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		ImageLabel.BorderSizePixel = 0
+		ImageLabel.Position = UDim2.new(0, 0, -0.00578034669, 0)
 		ImageLabel.Size = UDim2.new(0, 111, 0, 104)
 		ImageLabel.Image = "http://www.roblox.com/asset/?id=7212220276"
 
@@ -116,7 +119,7 @@ TextButton.MouseButton1Click:Connect(function()
 		TextLabel.BackgroundTransparency = 1.000
 		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		TextLabel.BorderSizePixel = 0
-		TextLabel.Position = UDim2.new(0.352750808, 0, 0.0462427735, 0)
+		TextLabel.Position = UDim2.new(0.378640771, 0, 0.0462427735, 0)
 		TextLabel.Size = UDim2.new(0, 200, 0, 88)
 		TextLabel.Font = Enum.Font.SourceSans
 		TextLabel.Text = "0.0.0.1"
@@ -130,7 +133,7 @@ TextButton.MouseButton1Click:Connect(function()
 		TextLabel_2.BackgroundTransparency = 1.000
 		TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		TextLabel_2.BorderSizePixel = 0
-		TextLabel_2.Position = UDim2.new(0.0388349518, 0, 0.601156235, 0)
+		TextLabel_2.Position = UDim2.new(0.0388349518, 0, 0.595375896, 0)
 		TextLabel_2.Size = UDim2.new(0, 297, 0, 60)
 		TextLabel_2.Font = Enum.Font.SourceSans
 		TextLabel_2.Text = "Version of keysystem"
@@ -138,30 +141,22 @@ TextButton.MouseButton1Click:Connect(function()
 		TextLabel_2.TextScaled = true
 		TextLabel_2.TextSize = 14.000
 		TextLabel_2.TextWrapped = true
-		TextLabel.Visible = true
-		TextLabel_2.Visible = true
-		FVERSION.Visible = true
-		ImageLabel.Visible = true
-		ImageLabel.Active = true
-		TextLabel.Active = true
-		TextLabel_2.Active = true
-		FVERSION.Active = true
 
 		-- Scripts:
 
-		local function VVFV_fake_script() -- FVERSION.LocalScript 
+		local function VSUW_fake_script() -- FVERSION.LocalScript 
 			local script = Instance.new('LocalScript', FVERSION)
 
 			local ver = script.Parent
 
 			wait(4)
-			ver:TweenPosition(UDim2.new(0.661, 0,-0.002, 0),"Out",Enum.EasingStyle.Linear,0.5,true)
+			ver:TweenPosition(UDim2.new(0.951, -250,0.368, -220),"Out",Enum.EasingStyle.Linear,0.5,true)
 			wait(0.5)
 			ver:TweenPosition(UDim2.new(0, 0,-0.002, 0),"Out",Enum.EasingStyle.Linear,0.5,true)
-			wait(0.6)
+			wait(0.7)
 			script.Parent.Parent:Destroy()
 		end
-		coroutine.wrap(VVFV_fake_script)()
+		coroutine.wrap(VSUW_fake_script)()
 		wait(4)
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
 		ScreenGui:Destroy()
